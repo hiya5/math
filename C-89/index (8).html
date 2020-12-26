@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Game</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="game.css">
+
+    <script src="game_login.js"></script>
+</head>
+
+<body>
+    <h4 id="player1_name"></h4> <span id="player1_score"></span>
+    <h4 id="player2_name"></h4> <span id="player2_score"></span>
+
+    <div class="container">
+        <h1 style="text-align: center">Activity 1</h1>
+        <h2 id="score">Score:0</h2>
+        <button class="btn btn-warning" onclick="updateScore();">Update Score</button>
+        <br>
+        <br>
+        <button class="btn btn-sucess" onclick="saveScore();">Save Score</button>
+        <br>
+        <br>
+        <button class="btn btn-info" onclick="nextPage();">Next Page</button>
+    </div>
+    <div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+        <h3>Player 1 Login for the game</h3>
+        <label>User Name:</label>
+        <input type="text" id="player1_name_input" class="form-control" placeholder="Player 1 Name">
+        <document.getelementById("player1_name").innerHtml=player1_name+":">
+            </document.getelementById(>
+            <document.getelementById("player_question").innerHtml="question turn -"+player1_name":">
+                </document.getelementById(>
+                <document.getelementById("player1_score").innerHtml=player1_score+":">
+                    </document.getelementById(>
+                    <document.getelementById("player_answer").innerHtml="question answer -"+player1_name":">
+                        </document.getelementById(>
+                        <div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+                            <h3>Player 2 Login for the game</h3>
+                            <label>User Name:</label>
+                            <input type="text" id="player1_name_input" class="form-control" placeholder="Player 2 Name">
+                            <document.getelementById("player2_name").innerHtml=player2_name+":">
+                                </document.getelementById(>
+                                <document.getelementById("player2_score").innerHtml=player2_score+":">
+                                    </document.getelementById(>
+                                    <button style="width: 30%" class="btn bnt-primary" onclick="addUser()">Log in</button>
+                                    <center>
+                                        <h2 style="color: white;">Guess The Word!</h2>
+                                        <h3 id="player_queston"></h3>
+                                        <h3 id="player_answer"></h3>
+                                        <div id="output" class="col-lg-6"></div>
+                                        <br>
+                                        <br>
+                                        <label>Send You Word: <b style="color: red">Try putting word which has 5 or more alphabet</b></label>
+                                        <input type="text" id="word" class="from-control" placeholder="word">
+                                        <br>
+                                        <button onclick="send()" class="btn btn-sucess" style="width: 30%;">Send</button>
+                                    </center>
+                        </div>
+                        <script src="game_page.js"></script>
+</body>
+
+</html>
